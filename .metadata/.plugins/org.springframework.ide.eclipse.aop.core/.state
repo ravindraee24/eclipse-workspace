@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="hulcsvexport"/>
+<aop-project name="Mysqlrestart"/>
+<aop-project name="dlr"/>
+<aop-project name="kwicker"/>
+<aop-project name="template"/>
+<aop-project name="spring-boot-jwt-master"/>
+</aop-reference-model>

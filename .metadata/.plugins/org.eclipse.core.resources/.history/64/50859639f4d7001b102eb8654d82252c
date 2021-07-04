@@ -1,0 +1,13 @@
+package com.gvsms.gvsmsservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GvsmsserviceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GvsmsserviceApplication.class, args);
+	}
+
+}

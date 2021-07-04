@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration
+        PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+   <property name="hibernate.proc.param_null_passing">true</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://192.168.25.130:3306/activeconnectdlr</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password"></property>
+      <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+      <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.connection.autocommit">true</property>
+    
+</session-factory>
+</hibernate-configuration>

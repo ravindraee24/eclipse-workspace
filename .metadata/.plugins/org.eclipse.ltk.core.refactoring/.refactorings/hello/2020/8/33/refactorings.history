@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ServletInitializer.java&apos; to &apos;Mysqlrestart/src/main/java/com.mysqlRestAPI.Mysqlrestart&apos;&#x0D;&#x0A;- Original project: &apos;hello&apos;&#x0D;&#x0A;- Destination element: &apos;Mysqlrestart/src/main/java/com.mysqlRestAPI.Mysqlrestart&apos;&#x0D;&#x0A;- Original element: &apos;ServletInitializer.java&apos;" description="Copy file" destination="=Mysqlrestart/src\/main\/java&lt;com.mysqlRestAPI.Mysqlrestart" element1="src/main/java/helloworldspringboot/hello/ServletInitializer.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1597241326105" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,146 @@
+package com.devglan.controller;
+
+import com.devglan.config.JwtTokenUtil;
+import com.devglan.model.*;
+import com.devglan.service.OTPService;
+import com.devglan.service.UserService;
+import com.devglan.service.impl.DashBoardServiceIMP;
+import com.devglan.service.impl.Dashboardrepo;
+import com.devglan.service.impl.OTPServiceImpl;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URI;
+import java.net.URL;
+import java.util.List;
+import java.util.Random;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.*;
+
+@CrossOrigin(origins = "*", maxAge = 3600)
+@RestController
+@RequestMapping("/bira_web_api/token")
+public class AuthenticationController {
+
+    @Autowired
+    private AuthenticationManager authenticationManager;
+
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
+
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping(value = "/generate-token", method = RequestMethod.POST)
+    public ApiResponse<AuthToken> register(@RequestBody LoginUser loginUser) throws AuthenticationException {
+
+        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginUser.getUsername(), loginUser.getPassword()));
+        final User user = userService.findOne(loginUser.getUsername());
+        final String token = jwtTokenUtil.generateToken(user);
+        return new ApiResponse<>(200,  user.getName(),new AuthToken(token, user.getUsername()));
+    }
+    @Autowired
+	private OTPServiceImpl otpservice;
+    @Autowired
+    private DashBoardServiceIMP dashboarddata;
+    @RequestMapping(value = "/generate-otp", method = RequestMethod.POST)
+    public  ApiResponse generateOTP(@RequestBody LoginUser loginUser)  {
+    	 int response=0;
+    	 String responseMessage="";
+    	
+    	Random rnd = new Random();
+    	int token = 100000 + rnd.nextInt(900000);
+    	URL url;
+		try {
+		String	urlstring="https://api.oot.bz/api/v1/send?username=biratesttrans.trans&password=dXtxZ&unicode=false&from=TMLTST&to=%msisdn%&text=Thank%20you%20for%20participating%20in%20the%20Bira%2091%20GOLD%20campaign.%20Your%20OTP%20for%20logging%20in%20is%20xxxx.%20Do%20not%20share%20the%20OTP%20with%20anyone.&templateId=ALL&dltContentId=123456";
+		urlstring=urlstring.replace("%msisdn%", loginUser.getUsername());
+		urlstring=urlstring.replace("xxxx",Integer.toString( token));
+			url = new URL(urlstring);
+			
+			HttpURLConnection con = (HttpURLConnection) url.openConnection();
+    	
+			con.setRequestMethod("GET");
+			con.setDoOutput(true); 
+			  
+           
+            // System.out.println(ezm.toString().getBytes().length); 
+
+            // write on the output stream 
+            
+            
+            System.out.println("Response Code:" 
+                                    + con.getResponseCode()); 
+            System.out.println("Response Message:" 
+                                + con.getResponseMessage());
+             response=con.getResponseCode();
+             responseMessage=con.getResponseMessage();
+		 	otpservice.save(new OTPToken( Integer.toString(token),loginUser.getUsername(),url.toString(),responseMessage,Integer.toString(response) ));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        return new ApiResponse<>(200,  "Success",response);
+		
+    }
+    
+    @RequestMapping(value = "/validate-otp", method = RequestMethod.POST)
+    public  ApiResponse validateOTP(@RequestBody OTPToken otptoken)  {
+    	List<Long> otp=  otpservice.findIdByMSISDNOTP(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    
+    
+    @RequestMapping(value = "/createPassword", method = RequestMethod.POST)
+    public  ApiResponse createPassword(@RequestBody OTPToken otptoken)  {
+    	Boolean otp=  dashboarddata.ChangePassword (otptoken.getMSISDN(), otptoken.getOTP());
+    	String Message="Thank you for participating. Your password has been updated to "+otptoken.getOTP()+". Please log in to https://bira91gold.bira91.com to redeem against exciting BIRA91 Merch.";
+    	dashboarddata.SentSMS(otptoken.getMSISDN(), Message, "64");
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    
+    @RequestMapping(value = "/DashBoarddata", method = RequestMethod.POST)
+    public  ApiResponse DashBoarddataRes(@RequestBody OTPToken otptoken)  {
+    List<String> list=	dashboarddata.CheckDashBoarddata(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",list);
+    	//List<Long> otp=  otpservice.findIdByMSISDNOTP(otptoken.getMSISDN(), otptoken.getOTP());
+    	//return new ApiResponse<>(200,  "Success",otp);
+    }
+    @RequestMapping(value = "/PointEarneddata", method = RequestMethod.POST)
+    public  ApiResponse PointEarneddata(@RequestBody OTPToken otptoken)  {
+    	List<String> otp=  dashboarddata.CheckUSERPointddata(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    @RequestMapping(value = "/OrderHistorydata", method = RequestMethod.POST)
+    public  ApiResponse OrderHistorydata(@RequestBody OTPToken otptoken)  {
+    	List<String> otp=  dashboarddata.CheckUSEROrderHistorydata(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    
+    @RequestMapping(value = "/CheckRegistereduser", method = RequestMethod.POST)
+    public  ApiResponse CheckRegistereduser(@RequestBody OTPToken otptoken)  {
+    	List<String> otp=  dashboarddata.CheckRegistereduser(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    @RequestMapping(value = "/Redeem", method = RequestMethod.POST)
+    public  ApiResponse OrderHistoryRedeemdata(@RequestBody GiftRedeem giftredeem)  {
+    	
+    	String UserAddress=giftredeem.getUsername()+','+giftredeem.getAddress()+','+giftredeem.getLocality()+' '+giftredeem.getCity()+','+giftredeem.getState()+ ' '+giftredeem.getPincode();
+    	boolean otp=  dashboarddata.RedeemPoints(giftredeem.getMsisdn(), giftredeem.getGiftId(),giftredeem.getGiftName(),giftredeem.getQuantity(), giftredeem.getSize(), UserAddress,giftredeem.getPointRedeem(),giftredeem.getState(),giftredeem.getCity() );
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    }
+
+

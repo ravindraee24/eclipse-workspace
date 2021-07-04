@@ -1,0 +1,191 @@
+package com.dlrupdate.dlr.controller;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.io.FileReader;
+import java.security.*;
+import java.security.cert.X509Certificate;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
+import javax.net.ssl.SSLContext;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+import org.springframework.transaction.annotation.Transactional;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
+import org.apache.http.conn.ssl.TrustStrategy;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.transaction.annotation.Transactional;
+import com.dlrupdate.dlr.service.dlrupdaeServiceImpl;
+@RestController
+@RequestMapping("/gvsms/api/")
+
+public class Gvsms {
+	@Autowired
+	dlrupdaeServiceImpl dlupdaeservice;
+	private static final Logger logger = LogManager.getLogger(ActiveConect.class);
+	@RequestMapping(value="v1/send", method = RequestMethod.GET)
+		
+	public @ResponseBody ResponseEntity<Object> getItem(@RequestParam Map<String,String> requestParams){
+		try {
+		//String query = request.getQueryString();
+		//long _transactionId_=Long.parseLong( requestParams.get("transactionId"));
+		String username=requestParams.get("username");
+		String _recpient_=requestParams.get("to");
+		String _sender_=requestParams.get("from");
+		String password=requestParams.get("password");
+		String unicode=requestParams.get("unicode");
+		String _message_=requestParams.get("text");
+		String campaignId=requestParams.get("campaignId");
+		String dltContentId=requestParams.get("dltContentId");
+		String corelationid=requestParams.get("corelationid");
+		
+		logger.error(requestParams);
+		FileReader reader=new FileReader("./resources/client.properties");  
+	      
+	    Properties p=new Properties();  
+	    p.load(reader);  
+	      
+	    System.out.println(p.getProperty("user"));  
+	    System.out.println(p.getProperty("password"));  
+		if(_recpient_ == null || _recpient_.length() == 0 || username == null || username.length() == 0||password == null || password.length() == 0 ||_sender_ == null || _sender_.length() == 0 )
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Mandatory parameters missing." + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\": null}");
+		if(_message_ == null || _message_.length() == 0)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"message text not found" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+		if( !StringUtils.isNumeric(_recpient_) || _recpient_.length() < 10|| _recpient_.length() > 12)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Invalid Msisdn  ["+_recpient_+"]" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+		if(dltContentId == null || dltContentId.length() < 4)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"dltContentId  not found." + 
+    		"\",\"pdu\":\"\""
+    		+ ",\"corelationId\":null}");
+	    Boolean resp=dlupdaeservice.insertMessageDetails("0",  "INSERT_PARSE_DATA", "1",  _recpient_,  _sender_,
+				 dltContentId, unicode,  _message_,  corelationid,  username, "1");
+	    if(resp)
+	    return ResponseEntity.ok("{\"transactionId\":\""+corelationid+"\",\"state\":\"SUBMIT_ACCEPTED\",\"description\":\"Message submitted successfully" + 
+	    		"\",\"pdu\":\"\""
+	    		+ ",\"corelationId\":null}");
+	    else
+	    	return ResponseEntity.ok("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\""+resp+"" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+	}catch(Exception  e) {logger.error(e.getMessage()); System.out.println(e.getMessage()); return ResponseEntity.status(HttpStatus.FORBIDDEN).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Something went wrong." + 
+    		"\",\"pdu\":\"\""
+    		+ ",\"corelationId\": null}");}
+	}
+	
+	
+	@RequestMapping(value="v1/onetoonejson", method = RequestMethod.POST)
+	
+	public @ResponseBody ResponseEntity<Object> getItemonetoone(@RequestParam Map<String,String> requestParams){
+		try {
+		//String query = request.getQueryString();
+		//long _transactionId_=Long.parseLong( requestParams.get("transactionId"));
+		String username=requestParams.get("username");
+		String _recpient_=requestParams.get("to");
+		String _sender_=requestParams.get("from");
+		String password=requestParams.get("password");
+		String unicode=requestParams.get("unicode");
+		String _message_=requestParams.get("text");
+		//String templateId=requestParams.get("templateId");
+		String dltContentId=requestParams.get("dltContentId");
+		//String _submitdt_=requestParams.get("submitdt");
+		//dlupdaeservice.insercallbackboot(_transactionId_, _recieptId_, _recpient_, _sender_, _description_, _totalPdu_, _message_, _deliverystatus_, _deliverydt_, _submitdt_);
+		logger.error(requestParams);
+		if(_recpient_ == null || _recpient_.length() == 0 || username == null || username.length() == 0||password == null || password.length() == 0 ||_sender_ == null || _sender_.length() == 0 )
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Mandatory parameters missing." + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\": null}");
+		if(_message_ == null || _message_.length() == 0)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"message text not found" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+		if( !StringUtils.isNumeric(_recpient_) || _recpient_.length() < 10|| _recpient_.length() > 12)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Invalid Msisdn  ["+_recpient_+"]" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+		if(dltContentId == null || dltContentId.length() < 4)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"dltContentId  not found." + 
+    		"\",\"pdu\":\"\""
+    		+ ",\"corelationId\":null}");
+	    String resp="";// callURL(username,password,_sender_, _recpient_,_message_,dltContentId);
+	    if(resp.contains(_recpient_))
+	    return ResponseEntity.ok("{\"transactionId\":\""+resp.replace(_recpient_, "").replace(" ", "").replace("-", "")+"\",\"state\":\"SUBMIT_ACCEPTED\",\"description\":\"Message submitted successfully" + 
+	    		"\",\"pdu\":\"\""
+	    		+ ",\"corelationId\":null}");
+	    else
+	    	return ResponseEntity.ok("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\""+resp+"" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+	}catch(Exception  e) {logger.error(e.getMessage()); System.out.println(e.getMessage()); return ResponseEntity.status(HttpStatus.FORBIDDEN).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Something went wrong." + 
+    		"\",\"pdu\":\"\""
+    		+ ",\"corelationId\": null}");}
+	}
+	
+	
+@RequestMapping(value="v1/onetomanyjson", method = RequestMethod.POST)
+	
+	public @ResponseBody ResponseEntity<Object> getItemonetomany(@RequestParam Map<String,String> requestParams){
+		try {
+		//String query = request.getQueryString();
+		//long _transactionId_=Long.parseLong( requestParams.get("transactionId"));
+		String username=requestParams.get("username");
+		String _recpient_=requestParams.get("to");
+		String _sender_=requestParams.get("from");
+		String password=requestParams.get("password");
+		String unicode=requestParams.get("unicode");
+		String _message_=requestParams.get("text");
+		//String templateId=requestParams.get("templateId");
+		String dltContentId=requestParams.get("dltContentId");
+		//String _submitdt_=requestParams.get("submitdt");
+		//dlupdaeservice.insercallbackboot(_transactionId_, _recieptId_, _recpient_, _sender_, _description_, _totalPdu_, _message_, _deliverystatus_, _deliverydt_, _submitdt_);
+		logger.error(requestParams);
+		if(_recpient_ == null || _recpient_.length() == 0 || username == null || username.length() == 0||password == null || password.length() == 0 ||_sender_ == null || _sender_.length() == 0 )
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Mandatory parameters missing." + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\": null}");
+		if(_message_ == null || _message_.length() == 0)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"message text not found" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+		if( !StringUtils.isNumeric(_recpient_) || _recpient_.length() < 10|| _recpient_.length() > 12)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Invalid Msisdn  ["+_recpient_+"]" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+		if(dltContentId == null || dltContentId.length() < 4)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"dltContentId  not found." + 
+    		"\",\"pdu\":\"\""
+    		+ ",\"corelationId\":null}");
+	    String resp="";// callURL(username,password,_sender_, _recpient_,_message_,dltContentId);
+	    if(resp.contains(_recpient_))
+	    return ResponseEntity.ok("{\"transactionId\":\""+resp.replace(_recpient_, "").replace(" ", "").replace("-", "")+"\",\"state\":\"SUBMIT_ACCEPTED\",\"description\":\"Message submitted successfully" + 
+	    		"\",\"pdu\":\"\""
+	    		+ ",\"corelationId\":null}");
+	    else
+	    	return ResponseEntity.ok("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\""+resp+"" + 
+		    		"\",\"pdu\":\"\""
+		    		+ ",\"corelationId\":null}");
+	}catch(Exception  e) {logger.error(e.getMessage()); System.out.println(e.getMessage()); return ResponseEntity.status(HttpStatus.FORBIDDEN).body("{\"transactionId\":\"\",\"state\":\"SUBMIT_REJECTED\",\"description\":\"Something went wrong." + 
+    		"\",\"pdu\":\"\""
+    		+ ",\"corelationId\": null}");}
+	}
+}

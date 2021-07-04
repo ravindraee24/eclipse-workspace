@@ -1,0 +1,78 @@
+package com.timesmobile.template;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.InputStream;
+import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.opencsv.CSVParser;
+import com.opencsv.CSVParserBuilder;
+import com.opencsv.CSVReader;
+import com.opencsv.bean.CsvToBean;
+import com.opencsv.bean.CsvToBeanBuilder;
+import com.opencsv.bean.HeaderColumnNameMappingStrategy;
+
+
+@SpringBootApplication
+public class TemplateApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TemplateApplication.class, args);
+	}
+	@Autowired
+	private TemplateRepository userrepo;
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println(args);
+		String fileName = args[5];
+		int id=Integer.parseInt(args[0]);
+	       int index =0;
+	       String row[]= new String[6];
+	
+		//////////////
+		List<List<String>> rows = new ArrayList<>();
+		try (InputStream in = new FileInputStream(fileName);) {
+		  CSV csv = new CSV(false, ',', in);
+		  List<String> colNames = null;
+		  if ( csv.hasNext() ) colNames = new ArrayList<String>(csv.next());
+		  while (csv.hasNext()) {
+		    List<String> fields = new ArrayList<String>(csv.next());
+		    row[0]=fields.get(0);
+		    row[1]=fields.get(1);
+		    row[2]=fields.get(2);
+		    row[3]=fields.get(3);
+		    row[4]=fields.get(4);
+		    row[5]=fields.get(5);
+		    System.out.println(fields.get(4));
+		    index++;
+		    String templaetext=row[4].replaceAll("\\n", "\n");//.replaceAll("^\"|\"$", "");
+   	      int count=  StringUtils.countMatches(row[4], "{#var#}");
+   	      for(int i=1;i<=count;i++) {
+   	    	  templaetext=templaetext.replaceFirst("#var#", String.valueOf(i));
+   	      }
+   	        userrepo.insertTemplate(id++ , row[1].replace(" ", "_"), Long.parseLong(row[0].replace("'", "")),templaetext , args[1], args[2], args[3],args[4], "42", row[5]);
+   	    
+           
+           }
+          
+		}
+	}
+      // userrepo.insertTemplate(template_id, template_label, dlt_ct_id, template_text, template_type, user_code, status, sender_code, approver_code, camp_type);
+	
+           
+	}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\users\ravindra.kumar1\eclipse-workspace\hulcsvexport\hulcsvexport"/>
+		<item value="E:\users\ravindra.kumar1\eclipse-workspace\kwicker\kwicker"/>
+		<item value="E:\users\ravindra.kumar1\eclipse-workspace\SpringBoot-Batch\SpringBoot-Batch"/>
+		<item value="E:\users\spring-boot-call-store-procedure-master\dlr\dlr"/>
+		<item value="E:\users\spring-boot-call-store-procedure-master\spring-boot-call-store-procedure-master"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>

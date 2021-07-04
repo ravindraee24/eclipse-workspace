@@ -1,0 +1,305 @@
+TEMPLATE ID,TEMPLATE NAME,TYPE,STATUS,TEMPLATE MESSAGE,CONSENT TYPE
+'1507160985458388015',Emploee SMS,Service-Implicit,Active,"""The last date for submitting Investment proofs in Excelity Portal for the FY 2020-21 is 10/01/2021.
+ Please refer Excelity mail for more info. Regards, Netmeds.""",Implicit
+'1507160982289882571',kickstart2021,Service-Explicit,Active,Head to Netmeds and kickstart 2021 savings! 20% off on meds + 25% NMS SuperCash. Use code NMSHNY. MOV: Rs. 500. TCA. {#var#},Explicit
+'1507160982285119926',NMSHNY,Service-Explicit,Active,Kickstart your 2021 savings! Use code NMSHNY for up to 45% off on meds + cashback up to Rs. 300 on Netmeds. TCA. Shop: http://nms-rx.com/CHECKOUT,Explicit
+'1507160941990403917',NMSFIT Product Viewed,Service-Explicit,Active,Always the best price for you! Use code NMSFIT & get flat 20% off + 10% NMS SuperCash on Netmeds. TCA. Shop @ {#var#},Explicit
+'1507160941986348589',NS30 Cart,Service-Explicit,Active,Let's make you and your cart happy! Flat 15% off on meds + 15% NMS SuperCash on Netmeds. Use code NMS30 at checkout. TCA. {#var#},Explicit
+'1507160941972257014',NS30 Offer 2,Service-Explicit,Active,Always the best price for you! Use code NMS30 & get flat 15% off + 15% NMS SuperCash on Netmeds. TCA. Shop @ {#var#},Explicit
+'1507160941961225495',NS30 Offer 1,Service-Explicit,Active,Like money? Use code NMS30 to get flat 15% off on meds + 15% NMS SuperCash on Netmeds. Min. Order: Rs. 750. TCA. Shop @ {#var#},Explicit
+'1507160941955920169',NMS1ST Cart,Service-Explicit,Active,Only our favs get this offer! Get flat 18% off on meds + 15% NMS SuperCash on your first order on Netmeds. Use code NMS1ST at checkout. TCA. {#var#},Explicit
+'1507160941943113127',NMSFIT Cart,Service-Explicit,Active,Your cart is waiting for you! Checkout and get flat 20% off on meds + 10% NMS SuperCash on Netmeds. Use code NMSFIT. TCA. {#var#},Explicit
+'1507160941939337571',NMS Swasthya Jan 1,Service-Explicit,Active,"Healthy New Year 2021! Flat 65% off on Netmeds Swasthya (59 tests including Diabetes, Vitamins, Thyroid & more) for Rs.1099 only. http://nms-rx.com/OFF66",Explicit
+'1507160921992089587',Dec 30 Cart,Service-Explicit,Active,Pause your show & head to Netmeds to get 20% off on meds + 20% NMS SuperCash. Code NMS2020 expires today. Min order: Rs. 500. TCA. {#var#},Explicit
+'1507160921986961271',Dec 30 Offer,Service-Explicit,Active,2020 Savings Finale! Use code NMS2020 for up to 40% off on meds + cashback up to Rs. 300 on Netmeds. TCA. Shop: http://nms-rx.com/checkOUT,Explicit
+'1507160889470125731',MObiDec,Service-Explicit,Active,Order meds & more and use 100% MobiKwik SuperCash* (Up to Rs. 75). No minimum order value. T&C Apply. {#var#},Explicit
+'1507160872098772647',Aarogyam 80%,Service-Explicit,Active,The more the merrier! Book multiple Aarogyam (B/C/X/1.3) profiles and get up to 80% off extra discount on Netmeds. Shop @ http://nms-rx.com/BookNOW,Explicit
+'1507160872092000663',Refill Supercash,Service-Explicit,Active,It's time for a refill and we got you! We've credited Rs. 200 NMS SuperCash (expires on {#var#}) to your Netmeds wallet. TCA. http://nms-rx.com/GET200,Explicit
+'1507160863286833888',Rs.125 NMS Super cash -Ril,Service-Explicit,Active,Hurray! Rs. 125 NMS SuperCash (Valid for 60 days) has been credited to your Netmeds wallet. Use code RELIANCE for flat 20% off. TCA. {#var#},Explicit
+'1507160861212768263',netmedsapp OTP,Transactional,Active,Enter Setup Code {#var#} in the Netmeds app. This code is valid only for {#var#} minutes. Please do not share this code with anyone.,--
+'1507160827558962248',Flat 75 Fullbody check up1,Service-Explicit,Active,It's a good day to book a full-body checkup on Netmeds. Flat 75% off on Aarogyam B full body checkup @ Rs. 599 only. Book now @ https://nms-rx.com/FLAT75OFF,Explicit
+'1507160818753636114',Flat 75 Fullbody check up,Service-Explicit,Active,Today's a good day to book a full-body checkup. Flat 75% off on Aarogyam B full body checkup @ Rs. 599 only. Book now @ https://nms-rx.com/FLAT75OFF,Explicit
+'1507160802885380648',Rs.125 NMS Super cash,Service-Explicit,Active,Hurray! Rs. 125 NMS SuperCash (Valid for 30 days) has been credited to your Netmeds wallet. Use code RELIANCE for flat 20% off. TCA. {#var#},Explicit
+'1507160767555130496',Diagnostics Dec 11,Service-Explicit,Active,Advanced care & Maximum savings on Netmeds. Get flat 70% off on Aarogyam 1.3 package. 90 tests only @ Rs. 1299. Book now @ https://nms-rx.com/Checkup,Explicit
+'1507160760734517286',Rs.250 NMS,Service-Explicit,Active,Do you like REWARDS? We've added Rs. 250 NMS SuperCash to your Netmeds wallet. Expires on {#var#}. Claim @ https://nms-rx.com/RS250,Explicit
+'1507160760727392963',Rs.125 NMS,Service-Explicit,Active,Do you like REWARDS? We've added Rs. 125 NMS SuperCash to your Netmeds wallet. Expires on {#var#}. Claim @ https://nms-rx.com/RS125,Explicit
+'1507160750461947696',Cart Mobikwik Updated,Service-Explicit,Active,Checkout cart via MobiKwik & get 10% MobiKwik cashback up to Rs.150 on first MobiKwik transaction on Netmeds. Offer ends soon. TCA. {#var#},Explicit
+'1507160743584366304',NMSWIN 3 DEC9,Service-Explicit,Active,How about a win-win-ter deal? Use code NMSWIN to save up to 40% on meds + earn MobiKwik Cashback (Max. Rs. 150) on Netmeds. TCA. https://nms-rx.com/OrderNOW,Explicit
+'1507160742597443615',NMSWIN 2 DEC9,Service-Explicit,Active,How about a win-win-ter deal? Use code NMSWIN to save up to 40% on meds + earn MobiKwik SuperCash (Max. Rs. 150) on Netmeds. TCA. https://nms-rx.com/OrderNOW,Explicit
+'1507160741008041720',NMSWIN Cart D9,Service-Explicit,Active,The winter winds brought 20% off on meds + 20% NMS SuperCash. Your code NMSWIN expires today. Min order: Rs. 500 on Netmeds. TCA. {#var#},Explicit
+'1507160741004366015',NMSWIN DEC9,Service-Explicit,Active,Winter Winnings! Use code NMSWIN for up to 40% off on meds + cashback up to Rs. 300 on Netmeds. TCA. Shop: https://nms-rx.com/OrderNOW,Explicit
+'1507160708327189631',Diag December4,Service-Explicit,Active,Cashback 'cuz we care! Book any pathology tests/packages above Rs. 1000 and get Rs. 75 NMS SuperCash. TCA. Book @ https://nms-rx.com/BookNOW,Explicit
+'1507160673583507151',Payment Partner 2 Dec,Service-Explicit,Active,Come back? :( Complete your Netmeds order & Pay via select payment partners & earn max. Rs.400 cashback. Shop Now *T&C apply. {#var#},Explicit
+'1507160673580235349',Payment Partner 1 Dec,Service-Explicit,Active,Winter Winnings: Order on Netmeds & get flat 10% Amazon Pay cashback up to Rs. 400 + up to 40% off. Min. order: Rs. 750. TCA. Shop: {#var#},Explicit
+'1507160673573666143',NMSWIN Cart,Service-Explicit,Active,The winter winds brought 20% off on meds + 20% NMS SuperCash. Your code NMSWIN expires today. Min order: Rs. 750 on Netmeds. TCA. {#var#},Explicit
+'1507160673565106864',NMSWIN DEC1,Service-Explicit,Active,Winter Winnings! Use code NMSWIN for up to 40% off on meds + flat 10% Amazon Pay cashback (Max. Rs. 400) on Netmeds. TCA. Shop: {#var#},Explicit
+'1507160673555973540',NMSWIN DEC,Service-Explicit,Active,Winter Winnings! Use code NMSWIN for up to 40% off on meds + flat 10% Amazon Pay cashback (Max. Rs. 400) on Netmeds. TCA. Shop: https://nms-rx.com/CheckOut,Explicit
+'1507160647930136177',NMSDEALRNP,Service-Explicit,Active,Let's make a deal? You use the code NMSDEAL & we give you 20% off on meds + 20% NMS SuperCash. MOV: Rs. 750 on Netmeds. TCA. Shop: https://nms-rx.com/orderNOW,Explicit
+'1507160639821351962',Weekendspecial,Service-Explicit,Active,#WeekendSpecials : Get Netmeds special packages & COVID Antibody tests starting at Rs. 399 T&C Apply. Book @ https://nms-rx.com/BOOKNOW,Explicit
+'1507160639816650870',Rs75 November,Service-Explicit,Active,"Your account has been credited with Rs. 75. Use it to order meds & more on Netmeds. Expires tonight. Quick, order now! T&C https://nms-rx.com/OrderNow",Explicit
+'1507160628414957481',Emp Cyclone SMS 2,Service-Implicit,Active,Employees are advised to work from home today 25th Nov due to the cyclone. Take care & stay safe - Netmeds.,Implicit
+'1507160623657357502',Free Zee5,Service-Explicit,Active,IMPORTANT: Your FREE ZEE5 6 months voucher code {#var#} from Netmeds expires on {#var#}. Activate ZEE5 subscription.,Explicit
+'1507160623652937727',Pricedrop ATC,Service-Explicit,Active,Use code : PRICEDROP20 & get FLAT 20% off on Netmeds.  Checkout with your cart now! * TCA. {#var#},Explicit
+'1507160623647185817',Emp Cyclone SMS,Service-Implicit,Active,Employees are advised to work from home tomorrow 25th Nov due to the cyclone. Warehouse employees may report to the warehouse depending on the weather condition,Implicit
+'1507160620031013933',Wednesday 25 Nov,Service-Explicit,Active,Always the best price for you! Use code NMSSUPER30 & get flat 15% off + 15% NMS SuperCash on Netmeds. TCA. Shop @ {#var#},Explicit
+'1507160620016785215',Myntra nms 3,Service-Explicit,Active,Your Myntra voucher code from Netmeds is {#var#}. Shop for min. Rs. 999 from select styles to get flat 10% off up to Rs. 500. TCA.,Explicit
+'1507160620010809168',Myntra nms 2,Service-Explicit,Active,Your Myntra voucher code from Netmeds is {#var#}. Shop for min. Rs. 999 from select styles to get flat 10% off up to Rs. 500. TCA. {#var#},Explicit
+'1507160620002973514',Myntra NMS,Service-Explicit,Active,YAYYY! Your flat 10% off Myntra voucher code from Netmeds is {#var#}. Order for Rs. 999 or above from select styles. TCA. {#var#},Explicit
+'1507160584924422109',Arogyam-Nov20,Service-Explicit,Active,Get Flat 50% off on Aarogyam full body checkup packages ~ starting at Rs. 599. Book now on Netmeds @ https://nms-rx.com/BODYCHECKUP,Explicit
+'1507160560404418654',GoodHwealthDay Cart,Service-Explicit,Active,Check out with your cart to get flat 20% off on meds + 20% NMS SuperCash. Use NMSDEAL on Netmeds. Min order: Rs. 750. T&C* {#var#},Explicit
+'1507160560399051075',#GoodHwealthDay:2,Service-Explicit,Active,#GoodHwealthDay: Use NMSDEAL for 20% off on meds + 20% NMS SuperCash on Netmeds. T&C* Shop now @ https://nms-rx.com/CHECKOUT,Explicit
+'1507160560395476825',GoodHwealthDay,Service-Explicit,Active,#GoodHwealthDay: Use NMSDEAL for 20% off on meds + 20% NMS SuperCash & cashback from payment partners on Netmeds. T&C* @ https://nms-rx.com/CHECKOUT,Explicit
+'1507160525068128341',NMSWDD,Service-Explicit,Active,Stand Strong Against Sugar! Use code NMSWDD to get 20% off on diabetes meds + 10% NMS SuperCash on Netmeds. MOV: Rs. 750. TCA. Shop: https://nms-rx.com/ORDER,Explicit
+'1507160518434216257',Sweettestday,Service-Explicit,Active,The Sweet-Test Sale on #WorldDiabetesDay. Get up to 80% off on all diabetes tests starting from Rs. 350 only on Netmeds. Book @ https://nms-rx.com/CHECKUP,Explicit
+'1507160518431138193',Diagnov13,Service-Explicit,Active,"Get Flat 66% off on Netmeds Swasthya @ Rs. 1099. Full body checkup including Diabetes, Vitamins, Thyroid, Iron Deficiency & more. Book @ https://nms-rx.com/N13",Explicit
+'1507160499969840384',NMSDIWALI,Service-Explicit,Active,Shubh Deal-wali Sale at Netmeds. Use NMSDIWALI for flat 20% off + 20% NMS SuperCash + 10% MobiKwik SuperCash. MOV: Rs. 750. TCA. https://nms-rx.com/ORDERNOW,Explicit
+'1507160499963391043',Deal-wali,Service-Explicit,Active,Order meds at Netmeds Shubh Deal-wali Sale to get flat 20% off on meds + 20% NMS SuperCash. Use NMSDIWALI. Min order: Rs. 750. TCA. {#var#},Explicit
+'1507160464472421309',Zee5 Reminder,Service-Explicit,Active,IMPORTANT: Your FREE ZEE5 6 months voucher code {#var#} from Netmeds expires on {#var#}. Activate ZEE5 subscription @ {#var#},Explicit
+'1507160464469106469',Aarogyam XNov,Service-Explicit,Active,Go the Xtra Mile with Aarogyam X! Full body checkup (129 tests) @ Flat 60% off for Rs.2399 only on Netmeds. Book now @ http://nms-rx.com/CHECKUP,Explicit
+'1507160432532459127',T20DayNov,Service-Explicit,Active,Netmeds T20 Day: Use NMST20 for 20% off on meds + 20% NMS SuperCash + Cashback. MOV: Rs. 750. TCA. Shop @ {#var#},Explicit
+'1507160432526194128',NMSUPER30nov1,Service-Explicit,Active,Become a Netmeds savings superstar! Use code NMSSUPER30 to get flat 15% off + 15% NMS SuperCash on orders over Rs. 1250 TCA. Shop: {#var#},Explicit
+'1507160432517470226',Zee5Nov,Service-Explicit,Active,"Congratulations, YOU WON! Your FREE ZEE5 6 months voucher code XXXXXXXXXX from Netmeds expires on 16/11/2020. Activate ZEE5 subscription @ {#var#}",Explicit
+'1507160432512597916',RefillNov,Service-Explicit,Active,Don't miss even one dose! Refill your medicines on Netmeds today and get FLAT 20% off.* Refill now! T&C http://nms-rx.com/REFILL,Explicit
+'1507160406983971607',payment_link_m2_3,Service-Implicit,Active,Hi! Your Netmeds order {#var#} is expiring soon! Click here to modify/pay: {#var#}. Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406980798358',payment_link_m2_2,Service-Implicit,Active,Hi! Your Netmeds order is {#var#} waiting to be processed! Click here to modify/pay: {#var#}.  Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406977438588',supercash_expiry_1,Service-Implicit,Active,"Hurry, SuperCash is Expiring!
+Your Netmeds SuperCash of INR {#var#} will expire today. 
+Shop now to get upto 25% discount on your medicines without any coupon.
+https://www.netmeds.com/home",Implicit
+'1507160406972260881',supercash_expiry_3,Service-Implicit,Active,"SuperCash is Calling!
+Your Netmeds SuperCash of INR {#var#} will expire in 3 days. 
+Shop now to get upto 25% discount on your medicines without any coupon.
+https://www.netmeds.com/home",Implicit
+'1507160406967993469',supercash_expiry_10,Service-Implicit,Active,"SuperCash is Calling!
+Your Netmeds SuperCash of INR {#var#} will expire on {#var#}. 
+Shop now to get upto 25% discount on your medicines without any coupon. 
+https://www.netmeds.com/home",Implicit
+'1507160406964037123',cash_expiry_10,Service-Implicit,Active,"Cash is Calling!
+Hi! Your Netmeds Cash of INR {#var#} will expire on {#var#}. 
+Apply your NMS Cash to get upto 100% INSTANT DISCOUNT on top of all offers! 
+https://www.netmeds.com/home",Implicit
+'1507160406959648815',cash_expiry_3,Service-Implicit,Active,"Cash is Calling!
+Hi! Your Netmeds Cash of INR {#var#} will expire in 3 days. 
+Apply your NMS Cash to get upto 100% INSTANT DISCOUNT on top of all offers! 
+https://www.netmeds.com/home",Implicit
+'1507160406955036431',cash_expiry_1,Service-Implicit,Active,"Hurry! Cash is Expiring!
+Your Netmeds Cash of INR {#var#} will expire today. 
+Apply your NMS Cash to get upto 100% INSTANT DISCOUNT on top of all offers! 
+https://www.netmeds.com/home",Implicit
+'1507160406949061763',subscription_active,Service-Implicit,Active,"Hi! Your Netmeds Medicine Subscription is active now! Your first subscription order has been delivered and you will receive your next order with the same medicines after {#var#} days. Review/manage your subscription here: {#var#} 
+Know more: https://youtu.be/B4_Jz9NQjVU 
+Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406943454497',subscription_cancelled,Service-Implicit,Active,Hi! We are sorry to see you go. Your Netmeds subscription has been cancelled. You can create a new subscription here{#var#}. Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406939831863',subscription_skipped,Service-Implicit,Active,"Hi! You will not receive your Netmeds subscription for the month of {#var#} as it has been skipped. Review your subscription here: {#var#}.
+Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406936781689',subscription_rescheduled_one,Service-Implicit,Active,"Hi! Your Netmeds subscription order for {#var#} has been rescheduled and will now arrive on{#var#}. Review your order here{#var#}.
+ Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406748139403',subscription_rescheduled_all,Service-Implicit,Active,Hi! Your Netmeds subscription orders have been rescheduled. Review your orders here {#var#} Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406742800302',subscription_modified_one,Service-Implicit,Active,"Hi! Your Netmeds subscription for {#var#} has been modified. Review your modified order here: {#var#}.
+Reach us at 7200712345 or cs@netmeds.com""",Implicit
+'1507160406738920490',subscription_modified_all,Service-Implicit,Active,"Hi! Your Netmeds subscription has been modified. Review your modified orders here{#var#}
+Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406735780055',processing_m1&issue,Service-Implicit,Active,"Consultation scheduled: Hi! A doctor from Netmeds will call you in the next 4-8 hours to confirm your medicines. 
+NOTE: Due to the current COVID-19 situation, there could be a delay in our services. We thank you for your patience.
+Reach us at 7200712345 or cs@netmeds.com 
+https://www.netmeds.com/",Implicit
+'1507160406731848347',consultation,Service-Implicit,Active,"Consultation scheduled: Hi! A doctor from Netmeds will call you in the next 4-8 hours to confirm your medicines. 
+NOTE: Due to the current COVID-19 situation, there could be a delay in our services. We thank you for your patience.
+Reach us at 7200712345 or cs@netmeds.com 
+https://www.netmeds.com/",Implicit
+'1507160406728220731',payment_link_m3_1,Service-Implicit,Active,Hi! Your Netmeds medicine subscription for {#var#} will be missed soon. Hurry up! Follow this link to manage/pay: {#var#} Kindly ignore if confirmed already (Paid or Cash on Delivery). Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406724301318',payment_link_m3_15,Service-Implicit,Active,Hi! Your Netmeds medicine subscription for {#var#} is waiting to be processed. Follow this link to manage/pay: {#var#} Kindly ignore if confirmed already (Paid or Cash on Delivery). Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406711896641',payment_link_m3_3,Service-Implicit,Active,Hi! Your Netmeds medicine subscription {#var#} is waiting to be processed! Follow this link to manage/pay{#var#} Kindly ignore if confirmed already (Paid or Cash on Delivery). Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406708624692',payment_link_m3_8,Service-Implicit,Active,Hi! Your Netmeds medicine subscription for {#var#} is waiting to be processed! Follow this link to manage/pay: {#var#} Kindly ignore if confirmed already (Paid or Cash on Delivery). Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406704261160',payment failed,Service-Implicit,Active,"We are sorry, your payment for Netmeds order {#var#} has failed. Any amount debited will be refunded within 7 working days. Follow this link to pay again or process the order as Cash on Delivery: https://m.netmeds.com/customer/orderhistory/view/{#var#}
+Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406700982928',delayed_delivery,Service-Implicit,Active,We're sorry! There's a delay in delivering your Netmeds order {#var#}. We are working with our delivery partner to resolve this! Track: {#var#}. Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406696763979',failed_delivery,Service-Implicit,Active,"Delivery Attempted: Hi, we couldn't reach you today to deliver your{#var#}. To update your delivery preference, click {#var#}. Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406692616908',out_for_delivery,Service-Implicit,Active,"Hi, your Netmeds order {#var#} is out for delivery. To track your order, follow the link: {#var#}. Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406689299270',delivered,Service-Implicit,Active,"Hi! Your Netmeds order {#var#} has been delivered on {#var#}. Order more products that you will love here!
+https://www.netmeds.com/home",Implicit
+'1507160406683771781',partially_delivered,Service-Implicit,Active,Hi! A part of your Netmeds order {#var#} has been delivered today. Track your order here: https://m.netmeds.com/customer/orderhistory/track/{#var#}. Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406679963482',partially_returned,Service-Implicit,Active,"Hi! Your Netmeds order {#var#} has been delivered on {#var#}. Order more products that you will love here!
+https://www.netmeds.com/home",Implicit
+'1507160406672143563',returned,Service-Implicit,Active,"Hi! Your return request for Netmeds order {#var#} has been accepted and will be processed shortly. Your refund will be initiated soon if you have paid already. Reach us at 7200712345 or cs@netmeds.com
+https://www.netmeds.com/home",Implicit
+'1507160406668355176',lost,Service-Implicit,Active,Hi! We are sorry that your Netmeds order {#var#} has been lost in transit. It will be re-shipped soon. Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406665228961',partially_lost,Service-Implicit,Active,Hi! We're sorry that a part of your Netmeds order {#var#} has been lost in transit. It will be re-shipped soon. Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507160406662121868',order_shipped,Service-Implicit,Active,"Hi! Your Netmeds order {#var#} has been shipped and will reach you soon! Track order: https://m.netmeds.com/customer/orderhistory/track/{#var#}.
+Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406658697441',order_shipped_split,Service-Implicit,Active,"Hi! Some item(s) from your Netmeds order {#var#} have been shipped and will reach you soon. Track order: https://m.netmeds.com/customer/orderhistory/track/{#var#}.
+ Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406654971390',cancelled_emergency_cod,Service-Implicit,Active,"Dear customer, we regret to inform you that all COD deliveries have been suspended so that we may conform to the governments social distancing norms. Therefore your current order has been cancelled.
+If you have any way to pre-pay the order, we urge you to place a new order.
+Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406650726980',cancelled_emergency,Service-Implicit,Active,"Sorry! Your Netmeds order {#var#} could not be processed and has been cancelled amidst the COVID-19 situation. If you have already paid for it, a refund will be initiated shortly.
+Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406647417890',partially_cancelled,Service-Implicit,Active,"Hi! We're sorry that your Netmeds order {#var#} has been partially cancelled. If you have already paid for it, a partial refund will be initiated shortly. Check details: {#var#}. Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507160406623398676',cancelled_paid_cod,Service-Implicit,Active,"Hi! Your Netmeds order {#var#} has been cancelled. If the order was paid for, a refund will be initiated shortly. Reach us at 7200712345 or cs@netmeds.com. You can re-order here
+https://www.netmeds.com/home",Implicit
+'1507160406619405491',customer_cancelled(not paid),Service-Implicit,Active,"Hi! Your Netmeds order {#var#} has been cancelled as per your request. 
+Reach us at 7200712345 or cs@netmeds.com 
+https://www.netmeds.com/home",Implicit
+'1507160406609584587',cancelled_junk,Service-Implicit,Active,"Sorry! Your Netmeds order {#var#} could not be processed due to invalid prescription.
+Reach us at 7200712345 or cs@netmeds.com 
+https://www.netmeds.com/home",Implicit
+'1507160406605573927',cancelled_auto,Service-Implicit,Active,"Hi! Your Netmeds order {#var#} has been cancelled as you have not taken any action. 
+Reach us at 7200712345 or cs@netmeds.com 
+https://www.netmeds.com/home",Implicit
+'1507160406601225996',cancelled_bo,Service-Implicit,Active,"Sorry! Your Netmeds order {#var#} could not be processed and has been cancelled. If you have already paid for it, refund will be initiated shortly.
+Reach us at 7200712345 or cs@netmeds.com 
+https://www.netmeds.com/home",Implicit
+'1507160406596900032',cancel_appeal,Service-Implicit,Active,"Hi! As promised, we have credited your Netmeds Wallet with INR {#var#} as NMS SuperCash. We hope to serve you soon!",Implicit
+'1507160406587901764',supercash_comp,Service-Implicit,Active,"We are sorry for the mishap! We have credited your Netmeds Wallet with {#var#} as NMS SuperCash. Shop now to get fab deals on products that you love!
+https://m.netmeds.com/home",Implicit
+'1507160406578809079',supercash_credit,Service-Implicit,Active,"Hi! NMS SuperCash worth INR {#var#} has been credited to your Netmeds Wallet! Shop now to get fab deals on products that you love!
+https://m.netmeds.com/home",Implicit
+'1507160406345929411',cash_marketing,Service-Implicit,Active,"Hi! You have earned Rs. {#var#} NMS Cash* from the recent order during the Surprise Sale. 
+*Expires on {#var#}. Shop Now! 
+https://www.netmeds.com/home",Implicit
+'1507160406337528537',cash_refer,Service-Implicit,Active,"Hi! Thanks for referring us! We have credited INR 150 NMS SuperCash to your Netmeds Wallet. Shop within 45 days to use it! 
+https://www.netmeds.com/home",Implicit
+'1507160406320964634',cash_delay,Service-Implicit,Active,"Hi! We are sorry that we couldn't deliver your product(s) on time. We thank you for your patience. INR {#var#} NMS Cash has been credited to your Netmeds Wallet as a gesture of appreciation. Shop Now!
+https://www.netmeds.com/home",Implicit
+'1507160406312902026',cash_comp,Service-Implicit,Active,"We are sorry for the mishap! We have credited your Netmeds Wallet with INR {#var#} as NMS Cash. You can use this to purchase any product on Netmeds. Shop now!
+https://www.netmeds.com/home",Implicit
+'1507160406302707010',cash_inv,Service-Implicit,Active,Hi! The invoice difference of INR {#var#} for your Netmeds order {#var#} has been credited to your wallet as NMS Cash. Shop now to get fab deals on products that you love! https://www.netmeds.com/home,Implicit
+'1507160406290797697',cash_pp,Service-Implicit,Active,"Hi! As per your request, we have processed INR {#var#} as NMS Cash. Shop now to get fab deals on products that you love!
+https://www.netmeds.com/home",Implicit
+'1507160406285100138',cash_credit,Service-Implicit,Active,"Hi! NMS Cash worth INR {#var#} has been credited to your Netmeds Wallet! Shop now to get fab deals on products that you love!
+https://www.netmeds.com/home",Implicit
+'1507160405035957824',NMSUPER30nov,Service-Explicit,Active,Become a Netmeds savings superstar! Use code NMSSUPER30 to get flat 15% off + 25% NMS SuperCash on orders over Rs. 1250 TCA. Shop: {#var#},Explicit
+'1507160405030356577',ATCNov1,Service-Explicit,Active,Checkout with your cart & get flat 15% off on meds + 25% NMS SuperCash. Use SAVENMS on orders above Rs. 1250 on Netmeds. TCA. {#var#},Explicit
+'1507160379865488449',NMSTOCT28,Service-Explicit,Active,Order meds at Netmeds T20 Day to get flat 20% off on meds + 20% NMS SuperCash. Use NMST20. Min order: Rs. 750. TCA. {#var#},Explicit
+'1507160379858488784',Oct28 offer,Service-Explicit,Active,Netmeds T20 Day: Use NMST20 for 20% off on meds + 20% NMS SuperCash + Cashback. MOV: Rs. 750. TCA. Shop @ http://nms-rx.com/OFF28OCT,Explicit
+'1507160352471987302',Vittymax SMS1,Service-Explicit,Active,"KEEP IT UP! Its time to reorder Vitty . Your daily tasty dose for immunity, overall health & wellness on Netmeds. http://nms-rx.com/BUYNOW",Explicit
+'1507160345725999471',NavratriTestFest1,Service-Explicit,Active,#NavratriTestFest: Up to 80% off on all diagnostic tests starting @ Rs. 90 only on Netmeds. Book @ http://nms-rx.com/UPTO80,Explicit
+'1507160345715366944',75NMScash3,Service-Explicit,Active,"Let's start over, shall we? We've added Rs. 75 NMS Cash to your Netmeds wallet. Avail NMS Cash before {#var#} on {#var#}. Shop: http://nms-rx.com/oct",Explicit
+'1507160345708260447',75NMScash2,Service-Explicit,Active,"Let's start over, shall we? We've added Rs. 75 NMS Cash to your Netmeds wallet. Shop using your NMS Cash before {#var#}. Shop: http://nms-rx.com/oct",Explicit
+'1507160345700840889',75NMScash1,Service-Explicit,Active,Just checkin' up on an old friend. We've credited Rs. 75 NMS Cash in your Netmeds wallet. You can only use it TODAY to buy meds at http://nms-rx.com/oct,Explicit
+'1507160345681330791',PAINNMS1,Service-Explicit,Active,"No pain, more gain! Use code PAINNMS to save up to 35% on pain relief meds. Pain relief essentials @ up to 28% off on Netmeds. TCA. Shop: http://nms-rx.com/O25",Explicit
+'1507160345677987837',BPNMS1,Service-Explicit,Active,Hey! Use code BPNMS and save up to 35% on hypotension & hypertension meds. Buy pressure monitors at up to 63% off on Netmeds. TCA. Shop: http://nms-rx.com/O24,Explicit
+'1507160337759730750',Aarogyam B Oct,Service-Explicit,Active,B at your best! Aarogyam B full body checkup (56 tests) at Flat 75% off for Rs. 599 only on Netmeds. Book @ http://nms-rx.com/OFF75,Explicit
+'1507160337754125322',NavratriTestFest,Service-Explicit,Active,#NavratriTestFest: Up to 80% off on all diagnostic tests starting @ Rs. 90 only only on Netmeds. Book @ http://nms-rx.com/UPTO80,Explicit
+'1507160337749929977',ANENMS1,Service-Explicit,Active,"Have you found iron, man? Save up to 35% on Anemia meds + Up to 65% off on health foods on Netmeds. Code: ANENMS. TCA. Shop @ http://nms-rx.com/O23",Explicit
+'1507160317763595637',9NMS,Service-Explicit,Active,Order meds at #NetmedsNavratri sale to get flat 20% off on meds + 20% NMS SuperCash. Use 9NMS. Min order: Rs. 750. TCA. {#var#},Explicit
+'1507160317757273468',Ril Insurance updated,Service-Implicit,Active,"Dear Netmeds employee, as informed please update your insurance details before 20th October. Please update the same at https://tinyurl.com/NMSInsuranceRenewal",Implicit
+'1507160317753166625',PAINNMS,Service-Explicit,Active,"No pain, more gain! Save up to 35% on pain relief meds + Up to 28% off on pain relief essentials on Netmeds. Code:PAINNMS TCA. Shop @ http://nms-rx.com/O25",Explicit
+'1507160317747929581',BPNMS,Service-Explicit,Active,Hey! Save up to 35% off on hypotension & hypertension meds + Up to 63% off on blood pressure monitors on Netmeds. Code:BPNMS. TCA. Shop @ http://nms-rx.com/O24,Explicit
+'1507160317742404963',ANENMS,Service-Explicit,Active,"Have you found iron, man? Save up to 35% on Anemia meds + Up to 75% off on health foods on Netmeds. Code: ANENMS. TCA. Shop @ http://nms-rx.com/O23",Explicit
+'1507160317733147152',BCNMS,Service-Explicit,Active,Save up to 35% off on blood clot meds + Get up to 76% off on Ayurvedic supplements on Netmeds. Use code: BCNMS TCA. Shop @ http://nms-rx.com/O22,Explicit
+'1507160317728454775',Flatnms offer,Service-Explicit,Active,Hey there! Use code FLATNMS and save up to 35% off on stomach care meds. Get up to 18% off on discomfort relief meds on Netmeds. TCA. Shop: http://nms-rx.com/O20,Explicit
+'1507160312164688003',Oct-21,Service-Explicit,Active,#NetmedsNavratriOffer: Get guaranteed cashback + Up to 40% off on meds. Use code 9NMS on orders above Rs. 750. TCA. http://nms-rx.com/OCT21OFF,Explicit
+'1507160312145820025',Oct-20,Service-Explicit,Active,A healthy pet puja! Save up to 35% off on stomach care meds + Get up to 18% off on discomfort relief meds on Netmeds. TCA. Shop @ http://nms-rx.com/O20,Explicit
+'1507160283678681142',Day 8 Navratri,Service-Explicit,Active,"No pain, more gain! Save up to 35% off on pain relief meds + Get up to 28% off on pain relief essentials on Netmeds. TCA. Shop @ http://nms-rx.com/O25",Explicit
+'1507160283676091924',Day 7 Navratri,Service-Explicit,Active,Hey! Save up to 35% off on hypotension & hypertension meds + Get up to 63% off on blood pressure monitors on Netmeds. TCA. Shop @ http://nms-rx.com/O24,Explicit
+'1507160283672531337',Day 6 Navratri,Service-Explicit,Active,"Have you found iron, man? Save up to 35% off on Anemia meds + Get up to 75% off on health foods & drinks on Netmeds. TCA. Shop @ http://nms-rx.com/O23",Explicit
+'1507160283668687539',Day 5 Navratri,Service-Explicit,Active,Catch the price drop! Save up to 35% off on blood clot meds + Get up to 76% off on Ayurvedic supplements on Netmeds. TCA. Shop @ http://nms-rx.com/O22,Explicit
+'1507160283546230017',Day 4 Navratri,Service-Explicit,Active,A healthy pet puja! Save up to 35% off on pressure meds + Get up to 18% off on discomfort relief meds on Netmeds. TCA. Shop @ http://nms-rx.com/O20,Explicit
+'1507160283542945801',Day 3 Navratri,Service-Explicit,Active,"Listen to your heart, okay? Save up to 35% off on heart meds + Get up to 63% off on cardiac care essentials on Netmeds. TCA. Shop @ http://nms-rx.com/O19",Explicit
+'1507160283537556654',Day 2 Navratri,Service-Explicit,Active,Sugar-free savings! Save up to 35% on diabetes meds + save up to 65% on blood glucose monitors on Netmeds. TCA. Shop @ http://nms-rx.com/O18,Explicit
+'1507160276304287388',Diagnostics Oct 16,Service-Explicit,Active,"Get Flat 66% off on Netmeds Swasthya @ Rs. 1099. Full body checkup including Diabetes, Vitamins, Thyroid, Iron Deficiency & more. Book @ http://nms-rx.com/OFF66",Explicit
+'1507160259583487419',Oct14 for Reliance,Service-Explicit,Active,This #NetmedsT20DayOffer ends TODAY. Use NMST20 for 20% off on meds + 20% NMS SuperCash + Cashback. Min. order: Rs. 750. TCA. Shop: http://nms-rx.com/NMST20,Explicit
+'1507160259580910213',NMSSUPER30 1,Service-Explicit,Active,Save of the season! Get 15% off on meds + 15% NMS SuperCash on Netmeds.com. Use code NMSSUPER30. MOV: Rs.750 TCA. Shop now @ {#var#},Explicit
+'1507160259578366610',Netmeds 100,Service-Explicit,Active,Score the perfect century with Netmeds.com! Add your products and use code NETMEDS100 for 100% NMS SuperCash. TCA. Claim offer @ {#var#},Explicit
+'1507160259575909350',meds to do list,Service-Explicit,Active,Hey! Is buying meds on your to-do list? Order your meds from home on Netmeds.com and get up to 40% off. TCA. Shop @  {#var#},Explicit
+'1507160259573467876',diagnostics 1,Service-Explicit,Active,Hello! Your doctor has suggested some diagnostic tests. Get supersaver deals on those tests at Netmeds.com. TCA. Book @ {#var#},Explicit
+'1507160259569905479',NMST201,Service-Explicit,Active,Check out with your Netmeds.com cart to get flat 20% off on meds + 20% NMS SuperCash. Use code NMST20. Min order: Rs. 750. TCA. {#var#},Explicit
+'1507160259567045725',Savenms 3,Service-Explicit,Active,Always the best price for you! Use code SAVENMS & get flat 15% off + 25% NMS SuperCash on Netmeds.com. TCA. Shop now @ {#var#},Explicit
+'1507160259564457484',NMSNEW283,Service-Explicit,Active,"Netmeds.com Rule #1: You want it, you get it! Use NMSNEW28 & get flat 18% off + 10% NMS SuperCash. TCA. Shop now @ {#var#}",Explicit
+'1507160259561044985',NMSNEW282,Service-Explicit,Active,Netmeds First-ival Perks! Use NMSNEW28 for 18% off on meds + 10% NMS SuperCash on 1st Netmeds.com order. T&C* Shop now @ {#var#},Explicit
+'1507160259554293546',Savenms oct,Service-Explicit,Active,Complete your Netmeds.com order & get 15% off on meds + 25% NMS SuperCash. Use code: SAVENMS. MOV: Rs. 1250. TCA. Shop @ {#var#},Explicit
+'1507160259550079980',Netmeds first,Service-Explicit,Active,The Netmeds First-ival continues! Use NMSNEW28 for 18% off + 10% NMS SuperCash on your 1st Netmeds.com order. TCA.  Shop @ {#var#},Explicit
+'1507160259539986956',Come back 2,Service-Explicit,Active,Come back? :( Complete your Netmeds.com order & pay via select payment partners to earn cashback up to Rs. 300. TCA. Shop @ {#var#},Explicit
+'1507160259536463072',Come back 1,Service-Explicit,Active,Come back? :( Complete your Netmeds.com order & pay via select payment partners to enjoy super savings. TCA. Shop @ {#var#},Explicit
+'1507160259533270424',oct 14th Cart,Service-Explicit,Active,#NetmedsT20DayOffer: Flat 20% off on meds + 20% NMS SuperCash. Use code NMST20 on Netmeds.com. MOV: Rs. 750. TCA. Shop @ {#var#},Explicit
+'1507160259529259431',Oct 14th Offer,Service-Explicit,Active,It's T20 Day on Netmeds.com. Use NMST20 for 20% off on meds + 20% NMS SuperCash + Cashback. MOV: Rs. 750. TCA. Shop @ http://nms-rx.com/NMST20,Explicit
+'1507160251054108882',NMSSUPER30 Cart SMS,Service-Explicit,Active,Save of the season! Get 15% off on meds + 15% NMS SuperCash (Max. Rs 1000) on Netmeds. Use code NMSSUPER30. MOV: Rs. 750 T&C* Shop now @ {#var#},Explicit
+'1507160225663410535',Netmeds100 Product Viewed,Service-Explicit,Active,Score the perfect century with Netmeds! Add your products and use code NETMEDS100 for 100% NMS SuperCash. TCA. Claim offer @ {#var#},Explicit
+'1507160223551793297',Consultation Not Pur Meds,Service-Explicit,Active,Hey there you have one more item to strike off of your to-do list. Order your meds on Netmeds and get Up to 40% off. Order Now {#var#},Explicit
+'1507160223545280719',Diagnostics journey sep,Service-Explicit,Active,Hey there your doctor has suggested diagnostic tests for you. Book on Netmeds for the best price. Book Now! {#var#},Explicit
+'1507160223537282521',NMST20 Offer Cart SMS,Service-Explicit,Active,Order meds at #NetmedsT20Day to get flat 20% off on meds + 20% NMS SuperCash. Use NMST20. Min order: Rs. 750. TCA. {#var#},Explicit
+'1507160223532300472',NMST20 Offer SMS,Service-Explicit,Active,#NetmedsT20Day: Use NMST20 for 20% off on meds + 20% NMS SuperCash + Cashback. MOV: Rs. 750. TCA. Shop @ http://nms-rx.com/NMST20,Explicit
+'1507160196501903641',Diagnostic Oct,Service-Explicit,Active,Advanced care & Maximum savings on Netmeds.  Get up to 70% off on Aarogyam 1.3 package. 90 tests only @ Rs. 1299. Book now @ https://nms-rx.com/90TESTS,Explicit
+'1507160196487639215',Oct 7th - NMSFPS Offer,Service-Explicit,Active,#ForgetFullPriceOffer: Use NMSFPS for 20% off on meds + 20% NMS SuperCash + Cashback on Netmeds. T&C* Shop now @ http://nms-rx.com/7OCTOFF,Explicit
+'1507160190898048221',NMST20 Cart SMS,Service-Explicit,Active,Check out with your cart to get flat 20% off on meds + 20% NMS SuperCash. Use NMST20 Min order: Rs. 750. T&C* {#var#},Explicit
+'1507160190886911131',NMSFPS OCT 7TH OFFER,Service-Explicit,Active,Order meds at Netmeds #ForgetFullPriceSale to get flat 20% off on meds + 20% NMS SuperCash. Use NMSFPS  Min order: Rs. 750. T&C* Shop now http://nms-rx.com/OFF7thOCT,Explicit
+'1507160155255755984',Oct 2nd Diagnostics SMS,Service-Explicit,Active,#GandhiJayantiSpecial! Netmeds C (Advanced Health Checkup + COVID Antibody IGG) at up to 63% off for Rs. 1499. Book @ http://nms-rx.com/60TESTS,Explicit
+'1507160135696206746',Sep 30th Wed Offer SMS,Service-Explicit,Active,#GoodHwealthDay: Use NMSDEAL for 20% off on meds + 20% NMS SuperCash on Netmeds. T&C* Shop now @ http://nms-rx.com/30SEPOFF,Explicit
+'1007540709355542967',Wednesday Offer Sep 9,--,Active,#Savings&SafetyGuaranteed: Use NMSSSG for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ http://nms-rx.com/SEP9OFF,--
+'1507160103708425675',Diagnostics Upto 80 OFF,Service-Explicit,Active,Netmeds #MonthEndDeal Alert! Up to 80% off on all tests & packages + Additional 10% NMS SuperCash. Tests starting from Rs. 99. Book @ http://nms-rx.com/diag,Explicit
+'1507160094850617205',Variant 2 Month End SMS,Service-Explicit,Active,"Let's start over, shall we? We've added Rs. 75 NMS Cash to your Netmeds wallet. Shop using your NMS Cash before {#var#}. Shop: http://nms-rx.com/Rs75",Explicit
+'1507160094845837173',Variant 3 Month End SMS -1,Service-Explicit,Active,"Let's start over, shall we? We've added Rs. 75 NMS Cash to your Netmeds wallet. Avail NMS Cash before {#var#} on {#var#}. Shop: http://nms-rx.com/Rs75",Explicit
+'1507160094837101428',Variant 3 Month End SMS,Service-Explicit,Active,"Let''s start over, shall we? We''ve added Rs. 75 NMS Cash to your Netmeds wallet. Avail NMS Cash before {#var#} on {#var#}. Shop: http://nms-rx.com/Rs75",Explicit
+'1507160094811362881',Variant 1 Month End SMS,Service-Explicit,Active,Just checkin' up on an old friend. We've credited Rs. 75 NMS Cash in your Netmeds wallet. You can only use it TODAY to buy meds at http://nms-rx.com/Rs75,Explicit
+'1507160094805746561',Covid GT Diagnostics,Service-Explicit,Active,Your health is your responsibility. Book a COVID Antibody GT Profile @ Rs. 1200 and use code NETMEDS30 to get 30% off. Book @ http://nms-rx.com/COVIDTEST,Explicit
+'1507160094801324066',Aarogyam B Diagnostics,Service-Explicit,Active,"Aarogyam B is back for Rs. 699 + Use code NETMEDS20 for 20% off. Diabetes, Liver, Lipid & Thyroid Profile (56 tests) Book: http://nms-rx.com/56TESTS",Explicit
+'1507160040637263617',Sep 23rd Wed Offer SMS,Service-Explicit,Active,#GoodHwealthDay: Use NMSDEAL for 20% off on meds + 20% NMS SuperCash on Netmeds. T&C* Shop now @ http://nms-rx.com/SEP23OFF,Explicit
+'1507160040632204605',Diagnostics COVID test - Sep 2020,Service-Explicit,Active,#CovidUpdate: Book COVID Antibody Test for Rs. 750 on Netmeds. Use Code NETMEDS20 and enjoy an extra 20% off. Book Now. T&C. https://nms-rx.com/COVID,Explicit
+'1507160017407934005',Sep 16th Wed Offer SMS 2,Service-Explicit,Active,#GoodHwealthDay: Use NMSDEAL for 20% off on meds + 20% NMS SuperCash on Netmeds. T&C* Shop now @ http://nms-rx.com/NMSDEAL,Explicit
+'1507160016238134497',Sep 16th Offer Cart Aban,Service-Explicit,Active,Check out with your cart to get flat 20% off on meds + 20% NMS SuperCash. Use NMSDEAL  Min order: Rs. 750. T&C* {#var#},Explicit
+'1507160016217889030',Sep 16th Wednesday Offer,Service-Explicit,Active,#GoodHwealthDay: Use NMSDEAL for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ http://nms-rx.com/NMSDEAL,Explicit
+'1507160008704314501',Zee5 Winner - Reminder -2,Service-Explicit,Active,Your FREE ZEE5 subscription voucher code: {#var#} from Netmeds expires tomorrow. Head to Zee5 and activate your subscription for uninterrupted entertainment! https://nms-rx.com/code,Explicit
+'1507160008666035565',Zee5 Winner - Reminder,Service-Explicit,Active,Your FREE ZEE5 subscription voucher from Netmeds expires tomorrow. Head to Zee5 and activate your subscription for uninterrupted entertainment! https://nms-rx.com/code,Explicit
+'1507159974315732043',ArogyamSep,Service-Explicit,Active,Avail the #AarogyamAdditionalAdvantage! Up to 80% off on all the Aarogyam packages + extra 20% off with code NETMEDS20. Book now @ https://nms-rx.com/UPTO80,Explicit
+'1507159974309074764',Super30sep,Service-Explicit,Active,Save of the season! Get 15% off on meds + 15% NMS SuperCash (Max. Rs 3000) on Netmeds. Use code NMSSUPER30. MOV: Rs. 750 T&C* Shop now @ {#var#},Explicit
+'1507159957069671474',Sep 9 offer,Service-Explicit,Active,#Savings&SafetyGuaranteed: Use NMSSSG for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ http://nms-rx.com/SEP9OFF,Explicit
+'1507159913435847923',Diagnostics SMS Campaign Sep,Service-Explicit,Active,Get flat 50% off on Anandham A package including 30 tests. Book now for Rs. 599 and use code NETMEDS20 for extra 20% off. http://nms-rx.com/DISC50,Explicit
+'1507159913431136438',Existing Customer Product Viewed Journey,Service-Explicit,Active,Always the best price for you! Use code SAVENMS & get flat 15% off + 25% NMS SuperCash on Netmeds. TCA. Shop now @ {#var#},Explicit
+'1507159913425769212',New Customer Product Viewed Journey,Service-Explicit,Active,"Netmeds Rule #1: You want it, you get it! Use NMSNEW28 & get flat 18% off + 10% NMS SuperCash. TCA. Shop now @ {#var#}",Explicit
+'1507159895939201872',Wednesday offer Sep 1,Service-Explicit,Active,#Savings&SafetyGuaranteed: Use NMSSSG for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ http://nms-rx.com/SEP2OFF,Explicit
+'1507159895933999914',Zee5 Winner,Service-Explicit,Active,"Hey {#var#}, CONGRATULATIONS! You have won a 6 month subscription for ZEE5 ! Your ZEE5 subscription code is {#var#}. Avail code on ZEE5 & get 6 months ZEE5 membership FREE. T&C Apply. https://nms-rx.com/code",Explicit
+'1507159861650818411',NMSLUCKY Aug 29-1,Service-Explicit,Active,Time is running out! Get 20% off on meds + 30% NMS SuperCash. Use code: NMSLUCKY on Netmeds. Min order: Rs 750. Ends TODAY. TCA. Shop @ http://nms-rx.com/lucky,Explicit
+'1507159860961572378',NMSLUCKY Aug 29,Service-Explicit,Active,Time is running out! Get 20% off on meds + 30% NMS SuperCash. Use code: NMSLUCKY on Netmeds. Min order: Rs 750. Ends TODAY. Shop Now. T&C. T&C. http://nms-rx.com/lucky,Explicit
+'1507159860956970552',NMSTODAY Campaign,Service-Explicit,Active,TGIF 'cause this code is valid ONLY TODAY! Use NMSTODAY on Netmeds to get flat 20% off on orders above Rs. 1250. TCA. Shop @ http://nms-rx.com/nmstoday,Explicit
+'1507159852681616289',Diagnostics SMS Campaign,Service-Explicit,Active,Get up to 80% off on all health packages. Use code PACKAGE10 to get an extra 10% off. Book on Netmeds now! T&C http://nms-rx.com/OFF80,Explicit
+'1507159852678356353',New Users SMS campaign,Service-Explicit,Active,Join the Netmeds First-ival! Use NMSNEW28 for 18% off on meds + 10% NMS SuperCash (Max. Rs 3000) on your 1st order. T&C* Shop now @ http://nms-rx.com/NEW,Explicit
+'1507159852675166709',Purchased Users SMS campaign,Service-Explicit,Active,Good news: Get 20% off on meds + 30% NMS SuperCash. Use code: NMSLUCKY on Netmeds. Min order: Rs 750. Ends in 48 hrs. Shop Now. T&C. http://nms-rx.com/lucky,Explicit
+'1507159834558235229',Aug 25 offer,Service-Explicit,Active,#Savings&SafetyGuaranteed: Use NMSSSG for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ https://nms-rx.com/OFF40,Explicit
+'1507159834554786991',Cart Aban Aug25,Service-Explicit,Active,"Stay home, stay safe, order meds and get flat 20% off on meds + 20% NMS SuperCash. Use NMSSSG  Min order: Rs. 750. T&C* {#var#}",Explicit
+'1507159798580382380',COVID Antibody,Service-Explicit,Active,#CovidUpdate: Book COVID Antibody Test for Rs. 600 on Netmeds. Use Code NETMEDS20 and enjoy an extra 20% off. Book Now. T&C. https://nms-rx.com/COVIDtest,Explicit
+'1507159775975504467',Wednesday offer with variable,Service-Explicit,Active,#ForgetFullPriceOffer: Use NMSFPS for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ {#var#},Explicit
+'1507159775970903552',Wednesday,Service-Explicit,Active,#ForgetFullPriceOffer: Use NMSFPS for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ https://nms-rx.com/NMSFPS,Explicit
+'1507159715106420123',Cart Aban - FWSC100,Service-Explicit,Active,#FreedomWeek: Checkout with your cart & get 100% NMS SuperCash on orders above Rs. 500 on Netmeds. Code: FWSC100. T&C Apply. {#var#},Explicit
+'1507159715100916145',Cart Aban - NMSFREEDOM,Service-Explicit,Active,Order meds at the Netmeds #FreedomWeekSale to get flat 20% off on meds + 20% NMS SuperCash. Use NMSFREEDOM  Min order: Rs. 750. T&C* {#var#},Explicit
+'1507159715086282270',Independence Day,Service-Explicit,Active,"#FreedomWeekSale: Discount, free shipping, cashback and whole lot of savings. Don't miss out. Head to Netmeds now! T&C https://nms-rx.com/junpt",Explicit
+'1507159653613919706',NMSFPS Offer link 4,Service-Explicit,Active,#ForgetFullPriceOffer: Use NMSFPS for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ https://nms-rx.com/junrtt,Explicit
+'1507159653603286604',NMSFPS Offer Link 3,Service-Explicit,Active,#ForgetFullPriceOffer: Use NMSFPS for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ https://nms-rx.com/junrt,Explicit
+'1507159653597759423',NMSFPS Offer Link 2,Service-Explicit,Active,#ForgetFullPriceOffer: Use NMSFPS for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ https://nms-rx.com/junptt,Explicit
+'1507159653574820345',Add to cart,Service-Explicit,Active,Order meds at Netmeds #ForgetFullPriceSale to get flat 20% off on meds + 20% NMS SuperCash. Use NMSFPS  Min order: Rs. 750. T&C* {#var#},Explicit
+'1107159617441307435',doctornotreach,Service-Implicit,Active,Hi! Our doctor was not able to reach on your number regarding your Netmeds Order {#var#}. We will call you again shortly or you can contact our customer care.,Implicit
+'1107159617537687023',orderdeliveredsoon,Service-Implicit,Active,"Netmeds.com: Your order {#var#} will be delivered soon by the courier service. For any questions, please call our Customer Service number {#var#}.",Implicit
+'1107159617551444896',requploadprescription,Service-Implicit,Active,"Netmeds.com {#var#}: Thank you for your valued order. Please upload your prescription, so that we can process your order quickly.",Implicit
+'1107159617569546832',partoutofdelivery,Service-Implicit,Active,"Netmeds.com {#var#}: Part {#var#} of your order is out for delivery. To track your order status, log on to your Netmeds Account.",Implicit
+'1107159617582619204',ordercompletelydelivered,Service-Implicit,Active,Netmeds.com {#var#}: Your order has been completely delivered. We look forward to serving you soon. Thank you for choosing Netmeds.com.,Implicit
+'1507159622041366224',downloadappsms,Service-Implicit,Active,Download Netmeds to get 15% off on meds + 25% NMS SuperCash. Use code: SAVENMS T&C* http://nms.care/NMS_App,Implicit
+'1507159622025689837',unable to reach you,Service-Implicit,Active,{#var#}: We have some queries regarding your order & are unable to reach you. Kindly call us back on [TOLLFREE] at the earliest so we can process your order faster.,Implicit
+'1507159622001320926',netmedsfirst,Service-Implicit,Active,"Welcome to Netmeds First, your first step towards a healthy future! Shop now and enjoy all the special deals and discounts we are offering just for you! Know more: {#var#}",Implicit
+'1507159621992757196',orderconfirmation,Service-Implicit,Active,Hi! Your Netmeds order {#var#} has been successfully placed & is being reviewed. We will notify you when your cart is ready. Reach us at 7200712345 or cs@netmeds.com https://www.netmeds.com/home,Implicit
+'1507159621986602760',CashonDeliverypayment,Service-Implicit,Active,Hi! Thanks for confirming your order! Your Netmeds order {#var#} will be shipped soon. Please note that you have chosen Cash on Delivery as payment method. Track order: {#var#} Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507159621977959369',drconsultation,Service-Implicit,Active,Netmeds.com {#var#}: We received your prescription and just wanted to let you know one of the doctors' networks we work with will be contacting you to verify some item(s) on the prescription.,Implicit
+'1507159621970890277',25NetmedsCashback,Service-Implicit,Active,Netmeds.com: Your 25% Netmeds Cashback amount of Rs. {#var#} has been credited to your Netmeds e-Wallet. This cashback will expire 31 days from today,Implicit
+'1507159621950106603',waitingpayment,Service-Implicit,Active,Hi! Your Netmeds order {#var#} is waiting to be processed! Click here to modify/pay: {#var#} Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507159621931483576',approvedpharmacist,Service-Implicit,Active,Netmeds.com {#var#}: Your prescription has been approved by our pharmacist. We will notify you with further progress on your order. You can also check the status of your order by logging into your Netmeds.com account.,Implicit
+'1507159621914403717',CashDeliverypayment,Service-Implicit,Active,Hi! Your Netmeds order {#var#} will be shipped soon. You have chosen Cash on Delivery as your payment method. Track order: {#var#} Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507159621901320828',uploadyourprescription,Service-Implicit,Active,"Netmeds.com {#var#}: Thank you for your valued order. Please upload your prescription, so that we can process your order quickly.",Implicit
+'1507159621891995745',paymentreceived,Service-Implicit,Active,"Hi! Thank you, payment has been received for your Netmeds order {#var#}. Your products will be shipped soon. Track order: {#var#} Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507159621879975791',loginotp1,Service-Implicit,Active,"{#var#} is your One-Time Password, valid for 30 minutes only. Please do not share your OTP with anyone. Thank you for shopping at Netmeds.com./",Implicit
+'1507159621869373202',prescriptionready,Service-Implicit,Active,"Hi {#var#}, your prescription from Netmeds is ready. Please check your email to access the prescription.",Implicit
+'1507159621859776219',orderscuccess1,Service-Implicit,Active,Hi! Your Netmeds order {#var#} has been placed successfully & is being processed. Track order: {#var#} Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507159621842026408',orderplaced,Service-Explicit,Active,"Hi {#var#}, Thank you for using Netmeds. Your order has been successfully placed. For any query call {#var#}.",Explicit
+'1507159621833711902',doctorreplied,Service-Implicit,Active,"Hi {#var#}, Netmeds doctor has replied to your query on chat. Please go on the Netmeds app to view the reply",Implicit
+'1507159621825156759',5unlimitedcashback,Service-Implicit,Active,Netmeds.com: The 5% unlimited Netmeds cashback amount of Rs. {#var#} has been credited to your Netmeds e-Wallet. This cashback will expire 31 days from today.,Implicit
+'1507159621810332218',refillpaymentreceived,Service-Implicit,Active,"Hi! Thank you, payment has been received for your Netmeds refill {#var#}. Your products will be shipped soon. Track order: {#var#} Reach us at 7200712345 or cs@netmeds.com",Implicit
+'1507159619555712057',NMSNew28-2,Service-Explicit,Active,The Netmeds First-ival is still ON.Use NMSNEW28 for 18% off + 10% NMS SuperCash on your 1st Netmeds order. T&C* Shop now @  {#var#},Explicit
+'1507159619547558331',SaveNMS,Service-Explicit,Active,Checkout with your cart & get Flat 15% off on meds + 25% NMS SuperCash. Use SAVENMS on orders above Rs. 1250. T&C*  {#var#},Explicit
+'1507159592856811729',delivered order sms,Service-Implicit,Active,Hi! Your Netmeds order {#var#} has been placed successfully & is being processed. Please note that you have chosen Cash on Delivery as payment method. Track order: {#var#} Reach us at 7200712345 or cs@netmeds.com,Implicit
+'1507159592828734117',login OTP,Service-Implicit,Active,"{#var#} is your One-Time Password, valid for 10 minutes only. Please do not share your OTP with anyone. Thank you for shopping at Netmeds.com",Implicit
+'1507159541809337590',Wellnessdays -2,Service-Explicit,Active,#SuperWellnessdayOffer: Use NMSSWD for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @  https://nms-rx.com/junrt,Explicit
+'1507159541793199010',Wellnessdays -1,Service-Explicit,Active,Shop for meds on Super Wellnessdays at Flat 20% off on meds + 20% NMS SuperCash. Use NMSSWD on orders above Rs. 750 on Netmeds. T&C*  https://nms-rx.com/junrt,Explicit
+'1507159541781877258',NMSSUPER30 Offer,Service-Explicit,Active,Save of the season! Get 15% off on meds + 15% NMS SuperCash (Max. Rs 3000) on Netmeds. Use code NMSSUPER30. MOV: Rs. 750 T&C* Shop now @ https://nms-rx.com/junrt,Explicit
+'1507159541769048165',NMSNEW28 Offer,Service-Explicit,Active,The Netmeds First-ival is still ON.Use NMSNEW28 for 18% off  + 10% NMS SuperCash on your 1st Netmeds order. T&C* Shop now @  https://nms-rx.com/junrt,Explicit
+'1507159541748190783',Payment Partner - 1 with Link,Service-Explicit,Active,Come back? :( Complete your Netmeds order & Pay via select payment partners & earn max. Rs.300 cashback. Shop Now *T&C apply.{#var#},Explicit
+'1507159541740068794',Payment Partner - 2 with link,Service-Explicit,Active,Come back? :( Complete your Netmeds order & Pay via select payment partners & enjoy super savings. Shop Now *T&C apply.{#var#},Explicit
+'1507159541702319297',NMSFPS Offer,Service-Explicit,Active,#ForgetFullPriceOffer: Use NMSFPS for 20% off on meds + 20% NMS SuperCash + Cashback (up to Rs. 300) on Netmeds. T&C* Shop now @ https://nms-rx.com/junpt,Explicit
+'1507159541688263311',Payment Partner - 1,Service-Explicit,Active,Come back? :( Complete your Netmeds order & Pay via select payment partners & earn max. Rs.300 cashback. Shop Now *T&C apply.,Explicit

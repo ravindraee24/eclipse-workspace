@@ -1,0 +1,52 @@
+package com.timesmobile.template;
+
+import java.io.FileReader;
+import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.opencsv.bean.CsvToBean;
+import com.opencsv.bean.CsvToBeanBuilder;
+
+
+@SpringBootApplication
+public class TemplateApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TemplateApplication.class, args);
+	}
+	@Autowired
+	private TemplateRepository userrepo;
+	@Override
+	public void run(String... args) throws Exception {
+		String fileName = "e:\\template.csv";
+		Reader reader = Files.newBufferedReader(Paths.get(fileName));
+		 CsvToBean<TemplateCSV> csvToBean = new CsvToBeanBuilder(reader)
+                 .withType(TemplateCSV.class)
+                 .withIgnoreLeadingWhiteSpace(true)
+                 .build();
+
+		 List<TemplateCSV> csvUsers = csvToBean.parse();
+
+		 for(TemplateCSV csvUser: csvUsers) {
+		     System.out.println("Name : " + csvUser.getName());
+		     System.out.println("Email : " + csvUser.getEmail());
+		     System.out.println("PhoneNo : " + csvUser.getPhoneNo());
+		     System.out.println("Country : " + csvUser.getCountry());
+		     System.out.println("==========================");
+		 }
+        
+        
+        
+		
+      // userrepo.insertTemplate(template_id, template_label, dlt_ct_id, template_text, template_type, user_code, status, sender_code, approver_code, camp_type);
+	}
+
+}

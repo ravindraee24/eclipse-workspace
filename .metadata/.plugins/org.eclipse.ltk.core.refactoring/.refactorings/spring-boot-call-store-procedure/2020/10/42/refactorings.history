@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-boot-call-store-procedure/src/main/java/com/putracode/sp/domain/DlRUpdate&apos; to &apos;DlRUpdate.java&apos;" description="Rename resource &apos;DlRUpdate&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/putracode/sp/domain/DlRUpdate" name="DlRUpdate.java" stamp="1602594108398" updateReferences="true"/>
+</session>

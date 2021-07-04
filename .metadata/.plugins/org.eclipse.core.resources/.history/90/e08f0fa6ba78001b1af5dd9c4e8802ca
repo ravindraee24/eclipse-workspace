@@ -1,0 +1,265 @@
+package com.devglan.service.impl;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.springframework.util.StringUtils;
+import java.util.List;
+import java.util.Optional;
+
+import javax.persistence.EntityManager;
+import javax.persistence.ParameterMode;
+import javax.persistence.PersistenceContext;
+import javax.persistence.StoredProcedureQuery;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.devglan.dao.DashBoardData;
+@Service
+public class DashBoardServiceIMP implements Dashboardrepo {
+
+	@PersistenceContext
+    private EntityManager entityManager;
+	public List<String> CheckDashBoarddata(String username, String password){
+		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("BIRA_DASHBOARDDATA"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        //query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+       
+
+        //Pass the parameter values
+        query.setParameter(1, username);
+        //query.setParameter(2, password);
+
+        //Execute query
+    List s=    query.getResultList();
+    return s;
+	}
+	@Autowired
+	private BCryptPasswordEncoder bcryptEncoder;
+	@Transactional 
+	public Boolean ChangePassword(String username, String password){
+		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("BIRA_SP_PASSWORD_CHANGE"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+
+        //Pass the parameter values
+        query.setParameter(1,"USER_P" );
+        query.setParameter(2, cleanIt(username));
+        query.setParameter(3,bcryptEncoder.encode(password)) ;
+        //Execute query
+        return query.execute();
+     
+	}
+	public List<String> CheckUSERPointddata(String username, String password){
+		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("BIRA_SP_LOYALTY_USER_PART"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+
+        //Pass the parameter values
+        query.setParameter(1,"USER_P_WEB" );
+        query.setParameter(2, username);
+        query.setParameter(3, "USER");
+        //Execute query
+    List s=    query.getResultList();
+    return s;
+	}
+	
+	
+	public boolean RedeemPoints(String username, String giftId,String giftName,String quantity,String size,String address,String pointRedeem,String state,String city){
+		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("BIRA_SP_LOYALTY_USER_REDEEM"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(4, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(5, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(6, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(7, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(8, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(9, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(10, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(11, String.class, ParameterMode.IN);
+        //Pass the parameter values
+        query.setParameter(1,"USER_REDEEM" );
+        query.setParameter(2,cleanIt( username));
+        query.setParameter(3, "WEB");
+        query.setParameter(4,cleanIt(giftId ));
+        query.setParameter(5,cleanIt( giftName));
+        query.setParameter(6, quantity);
+        query.setParameter(7,cleanIt(size) );
+        query.setParameter(8, cleanIt(address));
+        query.setParameter(9, cleanIt(pointRedeem));
+        query.setParameter(10, cleanIt(state));
+        query.setParameter(11,cleanIt( city));
+        //Execute query
+      //query.execute();
+    return query.execute();
+	}
+	
+	public List<String> CheckUSEROrderHistorydata(String username, String password){
+		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("BIRA_ORDERHISTORY"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        //query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+        //query.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+
+        //Pass the parameter values
+        //query.setParameter(1,"USER_P_WEB" );
+        query.setParameter(1, username);
+        //query.setParameter(3, "USER");
+        //Execute query
+    List s=    query.getResultList();
+    return s;
+	}
+    public Boolean checkUsernameAndPassword(String username, String password) {
+
+        //"login" this is the name of your procedure
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("G_PRO_LOGIN"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+       
+
+        //Pass the parameter values
+        query.setParameter(1, username);
+        query.setParameter(2, password);
+
+        //Execute query
+    List s=    query.getResultList();
+
+        //Get output parameters
+        //Integer outCode = (Integer) query.getOutputParameterValue(3);
+        //String outMessage = (String) query.getOutputParameterValue(4);
+
+        return true; //enter your condition
+    }
+    public Boolean SentSMS(String username, String message,String SMSTYPE) {
+
+        //"login" this is the name of your procedure
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("BIRA_SP_INSERT_SMS"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(4, String.class, ParameterMode.IN);
+        query.registerStoredProcedureParameter(5, String.class, ParameterMode.IN);
+        
+String ACTION="INSERT";
+        //Pass the parameter values
+        query.setParameter(1, ACTION);
+        query.setParameter(2, username);
+        query.setParameter(3, SMSTYPE);
+        query.setParameter(4, message);
+        query.setParameter(5, "2");
+        
+        //Execute query
+    Boolean s=    query.execute();
+
+        //Get output parameters
+        //Integer outCode = (Integer) query.getOutputParameterValue(3);
+        //String outMessage = (String) query.getOutputParameterValue(4);
+
+        return true; //enter your condition
+    }
+	@Override
+	public <S extends DashBoardData> S save(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends DashBoardData> Iterable<S> saveAll(Iterable<S> entities) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<DashBoardData> findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean existsById(Long id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Iterable<DashBoardData> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterable<DashBoardData> findAllById(Iterable<Long> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void deleteById(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(DashBoardData entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAll(Iterable<? extends DashBoardData> entities) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+		
+	}
+	public List<String> CheckRegistereduser(String msisdn, String otp) {
+		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("BIRA_USEREXISTS"); 
+
+        //Declare the parameters in the same order
+        query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
+        //query.registerStoredProcedureParameter(2, String.class, ParameterMode.IN);
+        //query.registerStoredProcedureParameter(3, String.class, ParameterMode.IN);
+
+        //Pass the parameter values
+        //query.setParameter(1,"USER_P_WEB" );
+        query.setParameter(1, msisdn);
+        //query.setParameter(3, "USER");
+        //Execute query
+    List s=    query.getResultList();
+    return s;
+		
+	}
+	public static String cleanIt(String str) {
+        return Jsoup.clean(
+                StringEscapeUtils.escapeHtml4(StringEscapeUtils.escapeEcmaScript (StringUtils.replace(str, "'", "''")))
+                , Whitelist.basic());
+    }
+	}

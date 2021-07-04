@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="LoginLogoutExample" name="LoginLogoutExample" path="E:/users/ravindra.kumar1/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/LoginLogoutExample" type="j2ee"/>
+</server>

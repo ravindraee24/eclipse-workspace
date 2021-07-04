@@ -1,0 +1,6 @@
+package services;
+
+public interface URLServiceint {
+String	callURL(String URL,String username,String password,String from,String to,String text,String dltContentId);
+String	callURLGVSMS(String URL,String username,String password,String from,String to,String text,String dltContentId);
+}

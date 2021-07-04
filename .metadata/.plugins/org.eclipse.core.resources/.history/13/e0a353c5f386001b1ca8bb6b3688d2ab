@@ -1,0 +1,25 @@
+package com.tml.kwicker;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+import com.tml.kwicker.service.DatabaseService;
+
+@SpringBootApplication
+public class KwickerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(KwickerApplication.class, args);
+	}
+	@Autowired
+	private DatabaseService userrepo;
+	@Override
+	public void run(String... args) throws Exception {
+	List<String> s=	userrepo.Selectdata("", "");
+	System.out.println(s);
+	}
+}

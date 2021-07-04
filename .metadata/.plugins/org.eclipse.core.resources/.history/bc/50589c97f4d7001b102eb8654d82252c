@@ -1,0 +1,25 @@
+package com.gvsms.gvsmsservice;
+
+import java.util.List;
+import java.util.Objects;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import services.DBService;
+
+@SpringBootApplication
+public class GvsmsserviceApplication implements CommandLineRunner {
+@Autowired
+DBService dbservice;
+	public static void main(String[] args) {
+		SpringApplication.run(GvsmsserviceApplication.class, args);
+	}
+	@Override
+	public void run(String... args) throws Exception {
+	List<Objects> objdata	=dbservice.insercallbackboot();
+	}
+	}
+

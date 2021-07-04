@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HelloWorldController.java&apos; to &apos;hello/src/main/java/helloworldspringboot.hello&apos;&#x0D;&#x0A;- Original project: &apos;demo&apos;&#x0D;&#x0A;- Destination element: &apos;hello/src/main/java/helloworldspringboot.hello&apos;&#x0D;&#x0A;- Original element: &apos;com.example.demo.HelloWorldController.java&apos;" description="Copy compilation unit" destination="=hello/src\/main\/java&lt;helloworldspringboot.hello" element1="/src\/main\/java&lt;com.example.demo{HelloWorldController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1597135511642" units="1" version="1.0"/>
+</session>

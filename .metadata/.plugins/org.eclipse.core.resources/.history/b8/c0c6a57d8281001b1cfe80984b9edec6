@@ -1,0 +1,80 @@
+package com.devglan.controller;
+
+import java.nio.charset.Charset;
+import java.security.Principal;
+import java.util.List;
+
+import org.apache.tomcat.util.http.fileupload.IOUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.devglan.config.JwtTokenUtil;
+import com.devglan.model.ApiResponse;
+import com.devglan.model.GiftRedeem;
+import com.devglan.model.OTPToken;
+import com.devglan.service.impl.DashBoardServiceIMP;
+
+@CrossOrigin(origins = "*", maxAge = 3600)
+@RestController
+@RequestMapping("/bira_web_api/internal")
+public class internalController {
+	@Autowired
+    private AuthenticationManager authenticationManager;
+
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
+    @Autowired
+    private DashBoardServiceIMP dashboarddata;
+    @RequestMapping(value = "/DashBoarddata", method = RequestMethod.POST)
+    public  ApiResponse DashBoarddataRes(Authentication authentication, Principal principal,@RequestHeader("key") String authtoken,@RequestHeader("AuthName") String authname,@RequestBody OTPToken otptoken)  {
+    	if(authtoken!= dashboarddata.sha256Hash(otptoken.getMSISDN()+authname)) {
+    		return new ApiResponse<>(401,  "unAutherized",authentication.getName()+principal.getName());
+    	}
+    	List<String> list=	dashboarddata.CheckDashBoarddata(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success"+authentication.getName()+principal.getName(),list);
+    	//List<Long> otp=  otpservice.findIdByMSISDNOTP(otptoken.getMSISDN(), otptoken.getOTP());
+    	//return new ApiResponse<>(200,  "Success",otp);
+    }
+    @RequestMapping(value = "/PointEarneddata", method = RequestMethod.POST)
+    public  ApiResponse PointEarneddata(@RequestHeader("key") String authtoken,@RequestHeader("AuthName") String authname,@RequestBody OTPToken otptoken)  {
+    	if(authtoken!= dashboarddata.sha256Hash(otptoken.getMSISDN()+authname)) {
+    		return new ApiResponse<>(401,  "unAutherized","");
+    	}
+    	List<String> otp=  dashboarddata.CheckUSERPointddata(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    @RequestMapping(value = "/OrderHistorydata", method = RequestMethod.POST)
+    public  ApiResponse OrderHistorydata(@RequestHeader("key") String authtoken,@RequestHeader("AuthName") String authname,@RequestBody OTPToken otptoken)  {
+    	if(authtoken!= dashboarddata.sha256Hash(otptoken.getMSISDN()+authname)) {
+    		return new ApiResponse<>(401,  "unAutherized","");
+    	}
+    	List<String> otp=  dashboarddata.CheckUSEROrderHistorydata(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    
+    @RequestMapping(value = "/CheckRegistereduser", method = RequestMethod.POST)
+    public  ApiResponse CheckRegistereduser(@RequestHeader("key") String authtoken,@RequestHeader("AuthName") String authname,@RequestBody OTPToken otptoken)  {
+    	if(authtoken!= dashboarddata.sha256Hash(otptoken.getMSISDN()+authname)) {
+    		return new ApiResponse<>(401,  "unAutherized","");
+    	}
+    	List<String> otp=  dashboarddata.CheckRegistereduser(otptoken.getMSISDN(), otptoken.getOTP());
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    @RequestMapping(value = "/Redeem", method = RequestMethod.POST)
+    public  ApiResponse OrderHistoryRedeemdata(@RequestHeader("key") String authtoken,@RequestHeader("AuthName") String authname,@RequestBody GiftRedeem giftredeem)  {
+    	if(authtoken!= dashboarddata.sha256Hash(giftredeem.getMsisdn()+authname)) {
+    		return new ApiResponse<>(401,  "unAutherized","");
+    	}
+    	String UserAddress=giftredeem.getUsername()+','+giftredeem.getAddress()+','+giftredeem.getLocality()+' '+giftredeem.getCity()+','+giftredeem.getState()+ ' '+giftredeem.getPincode();
+    	boolean otp=  dashboarddata.RedeemPoints(giftredeem.getMsisdn(), giftredeem.getGiftId(),giftredeem.getGiftName(),giftredeem.getQuantity(), giftredeem.getSize(), UserAddress,giftredeem.getPointRedeem(),giftredeem.getState(),giftredeem.getCity() );
+    	return new ApiResponse<>(200,  "Success",otp);
+    }
+    }

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-boot-jwt-master/src/main/java/com/devglan/model/OTPToken&apos; to &apos;OTPToken.java&apos;" description="Rename resource &apos;OTPToken&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/devglan/model/OTPToken" name="OTPToken.java" stamp="1609230504639" updateReferences="true"/>
+</session>

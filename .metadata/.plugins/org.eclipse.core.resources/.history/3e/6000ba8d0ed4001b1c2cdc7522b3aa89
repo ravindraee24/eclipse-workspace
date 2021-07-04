@@ -1,0 +1,12 @@
+package com.dlrupdate.dlr.service;
+
+public interface DlrService {
+	public boolean  insercallbackboot(long _transactionId_,String _recieptId_,long _recpient_,String _sender_,String _description_,String _totalPdu_,String _message_,String _deliverystatus_,String _deliverydt_,String _submitdt);
+	
+	int InsertDataToBlackList(String msisdn, String usercode);
+
+
+
+	boolean insertMessageDetails(String _CAMPID, String _ACTION, String _REQ_TYPE, String _recpient_, String _sender_,
+			String _DLTID, String _UNICODE, String _message_, String _CORELATIONID, String _USER, String _IS_VALID);
+}
